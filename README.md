@@ -1,2 +1,2 @@
-# ProgObiektoweJava_Lab11
-TWORZENIE APLIKACJI Z GRAFICZNYM INTERFEJSEM UŻYTKOWNIKA Z OBSŁUGĄ ZDARZEŃ.
+# GUI Applications
+A few GUI applications, like entities calculator and matrix claculator with Gauss' elimination method.
