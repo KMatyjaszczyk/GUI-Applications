@@ -1,9 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.util.Random;
 
 public class Kalkulator {
@@ -227,6 +224,12 @@ public class Kalkulator {
             }
         });
 
+        fTextBinarny.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                super.keyPressed(e);
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -234,6 +237,17 @@ public class Kalkulator {
         ramka.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ramka.setMinimumSize(new Dimension(350, 250));
         ramka.setIconImage(new ImageIcon(Kalkulator.class.getResource("icon.png")).getImage());
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (UnsupportedLookAndFeelException e) {
+            e.printStackTrace();
+        }
         ramka.pack();
         ramka.setVisible(true);
     }
