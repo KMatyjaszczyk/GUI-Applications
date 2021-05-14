@@ -21,9 +21,7 @@ public class Testowy {
     public Testowy() {
 
         comboBoxKoncowka.addItem("");
-        comboBoxKoncowka.addItem("XD");
-        comboBoxKoncowka.addItem("JD");
-        comboBoxKoncowka.addItem("ale jajca");
+        comboBoxKoncowka.addItem("Test");
 
         buttonKopiuj.addActionListener(new ActionListener() {
             @Override
